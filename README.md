@@ -23,5 +23,8 @@ After the Layouts are created, you can also create a Template to combine multipl
 - Improve docs
 - Create unit tests
 - Create more loaders
-- Create an option to extend a Layout
+- Create option to extend a Layout
 - Implement an optional cache system for the template config
+- Implement an Template Reader with Generator/Iterator
+- Review the Unique Identification for Template Itens (array_count_values doesn't permit arrays)
+- Create a default option for encode/decode
