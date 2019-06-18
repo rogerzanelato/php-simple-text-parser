@@ -9,8 +9,6 @@
       "email": "rogerzanelato@gmail.com"
     }
   ],
-  "minimum-stability": "dev",
-  "require": {},
   "autoload": {
     "psr-4": {
       "TextParser\\": "src/"
