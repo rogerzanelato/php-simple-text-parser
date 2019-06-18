@@ -1,5 +1,5 @@
 {
-  "name": "roger/php-simple-text-parser",
+  "name": "rogerza/php-simple-text-parser",
   "description": "A simple library intended to break texts into structured data based on configuration files.",
   "type": "library",
   "license": "MIT",
