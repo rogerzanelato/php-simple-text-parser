@@ -1,0 +1,17 @@
+{
+  "delimiter": "#",
+  "items": [
+    {
+      "layoutSource": "header.json",
+      "alias": "header",
+      "identification": "IP20",
+      "order": 0
+    },
+    {
+      "layoutSource": "detail.json",
+      "alias": "detail",
+      "identification": "L010000",
+      "order": 1
+    }
+  ]
+}

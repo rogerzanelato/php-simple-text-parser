@@ -1,0 +1,24 @@
+{
+  "name": "roger/text-parser",
+  "description": "A simple library intended to break texts into structured data based on configuration files.",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Roger Zanelato",
+      "email": "rogerzanelato@gmail.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {},
+  "autoload": {
+    "psr-4": {
+      "TextParser\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Sample\\": "docs/samples"
+    }
+  }
+}

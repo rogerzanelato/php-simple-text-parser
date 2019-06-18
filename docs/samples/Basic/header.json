@@ -1,0 +1,52 @@
+{
+  "items": [
+    {
+      "name": "CDTRAN",
+      "start": 0,
+      "length": 4,
+      "description": "CÓDIGO DA TRANSAÇÃO SERASA LITERAL IP20",
+      "encodeFormat": "TextParser\\Formatter\\PaddingBlankLeft",
+      "decodeFormat": "TextParser\\Formatter\\Trim"
+    },
+    {
+      "name": "CDOPCAO",
+      "start": 4,
+      "length": 4,
+      "description": "Informações",
+      "encodeFormat": "TextParser\\Formatter\\PaddingBlankLeft",
+      "decodeFormat": "TextParser\\Formatter\\Trim"
+    },
+    {
+      "name": "COMPACTA",
+      "start": 8,
+      "length": 1,
+      "description": "Informações",
+      "encodeFormat": "TextParser\\Formatter\\PaddingBlankLeft",
+      "decodeFormat": "TextParser\\Formatter\\Trim"
+    },
+    {
+      "name": "TIPOTS",
+      "start": 9,
+      "length": 1,
+      "description": "Informações",
+      "encodeFormat": "TextParser\\Formatter\\Trim",
+      "decodeFormat": "TextParser\\Formatter\\Trim"
+    },
+    {
+      "name": "NOMETS",
+      "start": 10,
+      "length": 8,
+      "description": "Informações",
+      "encodeFormat": "TextParser\\Formatter\\PaddingBlankLeft",
+      "decodeFormat": "TextParser\\Formatter\\Trim"
+    },
+    {
+      "name": "CNPJ",
+      "start": 18,
+      "length": 9,
+      "description": "Informações",
+      "encodeFormat": "TextParser\\Formatter\\PaddingZeroLeft",
+      "decodeFormat": "TextParser\\Formatter\\Trim"
+    }
+  ]
+}

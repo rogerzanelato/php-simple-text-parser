@@ -1,0 +1,52 @@
+{
+  "items": [
+    {
+      "name": "IDINF",
+      "start": 1,
+      "length": 2,
+      "description": "0 – CONTROLE",
+      "encodeFormat": "TextParser\\Formatter\\Trim",
+      "decodeFormat": "TextParser\\Formatter\\Trim"
+    },
+    {
+      "name": "BCFIC",
+      "start": 3,
+      "length": 2,
+      "description": "Informações",
+      "encodeFormat": "TextParser\\Formatter\\Trim",
+      "decodeFormat": "TextParser\\Formatter\\Trim"
+    },
+    {
+      "name": "TPINF",
+      "start": 5,
+      "length": 2,
+      "description": "0 – DADOS DA FICHA CADASTRAL",
+      "encodeFormat": "TextParser\\Formatter\\Trim",
+      "decodeFormat": "TextParser\\Formatter\\Trim"
+    },
+    {
+      "name": "CDSITRF",
+      "start": 7,
+      "length": 2,
+      "description": "CÓDIGO DA SITUAÇÃO DA EMPRESA (ANTIGA)",
+      "encodeFormat": "TextParser\\Formatter\\Trim",
+      "decodeFormat": "TextParser\\Formatter\\Trim"
+    },
+    {
+      "name": "DSSITRF",
+      "start": 9,
+      "length": 79,
+      "description": "DESCRIÇÃO DA SITUAÇÃO DA EMPRESA (ANTIGA)",
+      "encodeFormat": "TextParser\\Formatter\\Trim",
+      "decodeFormat": "TextParser\\Formatter\\Trim"
+    },
+    {
+      "name": "CDCG",
+      "start": 88,
+      "length": 9,
+      "description": "Informações",
+      "encodeFormat": "TextParser\\Formatter\\Trim",
+      "decodeFormat": "TextParser\\Formatter\\Trim"
+    }
+  ]
+}

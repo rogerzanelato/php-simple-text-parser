@@ -1,0 +1,52 @@
+{
+  "items": [
+    {
+      "name": "CDTRAN",
+      "start": 0,
+      "length": 4,
+      "description": "CÓDIGO DA TRANSAÇÃO SERASA LITERAL IP20",
+      "encodeFormat": "\\Sample\\IntegerToHamburguer",
+      "decodeFormat": "\\Sample\\IntegerToHamburguer"
+    },
+    {
+      "name": "CDOPCAO",
+      "start": 4,
+      "length": 4,
+      "description": "Informações",
+      "encodeFormat": "\\Sample\\IntegerToHamburguer",
+      "decodeFormat": "\\Sample\\IntegerToHamburguer"
+    },
+    {
+      "name": "COMPACTA",
+      "start": 8,
+      "length": 1,
+      "description": "Informações",
+      "encodeFormat": "\\Sample\\IntegerToHamburguer",
+      "decodeFormat": "\\Sample\\IntegerToHamburguer"
+    },
+    {
+      "name": "TIPOTS",
+      "start": 9,
+      "length": 1,
+      "description": "Informações",
+      "encodeFormat": "\\Sample\\IntegerToHamburguer",
+      "decodeFormat": "\\Sample\\IntegerToHamburguer"
+    },
+    {
+      "name": "NOMETS",
+      "start": 10,
+      "length": 8,
+      "description": "Informações",
+      "encodeFormat": "\\Sample\\IntegerToHamburguer",
+      "decodeFormat": "\\Sample\\IntegerToHamburguer"
+    },
+    {
+      "name": "CNPJ",
+      "start": 18,
+      "length": 9,
+      "description": "Informações",
+      "encodeFormat": "\\Sample\\IntegerToHamburguer",
+      "decodeFormat": "\\Sample\\IntegerToHamburguer"
+    }
+  ]
+}

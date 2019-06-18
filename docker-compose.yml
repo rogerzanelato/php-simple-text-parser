@@ -1,0 +1,12 @@
+version: "3.3"
+services:
+  text-reader:
+    build:
+      context: ./docker
+      dockerfile: Dockerfile
+    ports:
+      - 8040:80
+    volumes:
+      - ./:/var/www/html
+    expose:
+      - "9000"
