@@ -26,30 +26,34 @@ final class Factory
      *
      * @param string $filePath
      * @param array $aliases
+     * @param string $basePathLayout
      * @return Template
      */
-    public function createFromFilePath(string $filePath, array $aliases = []): Template
+    public function createFromFilePath(string $filePath, array $aliases = [], string $basePathLayout = null): Template
     {
         $fileLoader = $this->loaderFactory->createFileLoaderFromFilePath($filePath);
 
-        $TemplateLoader = new Loader($fileLoader, $aliases);
+        // If a layout's path is not supplied, we consider that the layout is on a path relative to the template
+        $basePathLayout = $basePathLayout ?? dirname($filePath) . DIRECTORY_SEPARATOR;
+        
+        $TemplateLoader = new Loader($fileLoader, $aliases, $basePathLayout);
 
         return $TemplateLoader->loadTemplate($filePath);
     }
-
     /**
      * Create a Template from a String
      *
      * @param string $content
      * @param string $format
      * @param string $aliases
+     * @param string $basePathLayout
      * @return Template
      */
-    public function createFromString(string $content, string $format, array $aliases = []): Template
+    public function createFromString(string $content, string $format, array $aliases = [], string $basePathLayout = null): Template
     {
         $stringLoader = $this->loaderFactory->createStringLoaderFromFormat($format);
 
-        $TemplateLoader = new Loader($stringLoader, $aliases);
+        $TemplateLoader = new Loader($stringLoader, $aliases, $basePathLayout);
 
         return $TemplateLoader->loadTemplate($content);
     }

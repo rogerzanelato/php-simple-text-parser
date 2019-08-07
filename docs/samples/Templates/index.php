@@ -10,8 +10,9 @@ use TextParser\Template\Manager as TemplateManager;
 
 try {
     $file = dirname(__DIR__, 1) . DIRECTORY_SEPARATOR . 'sample_string.txt';
+    $template = realpath("template.json");
 
-    $Template = (new TemplateFactory)->createFromFilePath("template.json");
+    $Template = (new TemplateFactory)->createFromFilePath($template);
     /**
      * This closure will receive the value and line being read, and is responsible to extract the Identification
      * that should be defined at the Identification in "Template -> Items -> Identification"

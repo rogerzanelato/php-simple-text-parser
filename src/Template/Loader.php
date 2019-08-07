@@ -29,13 +29,20 @@ final class Loader
     private $formattersKeyMapping;
 
     /**
+     * @var string
+     */
+    private $basePathLayout;
+
+    /**
      * @param LoaderInterface $Loader
      * @param array $formattersKeyMapping
+     * @param string $basePathLayout
      */
-    public function __construct(LoaderInterface $Loader, array $formattersKeyMapping = [])
+    public function __construct(LoaderInterface $Loader, array $formattersKeyMapping = [], string $basePathLayout = null)
     {
         $this->loader = $Loader;
         $this->formattersKeyMapping = $formattersKeyMapping;
+        $this->basePathLayout = $basePathLayout;
     }
 
     /**
@@ -69,7 +76,8 @@ final class Loader
         foreach ($dataTemplateFile['items'] as $dataItem) {
             $this->validateDataItem($dataItem);
 
-            $Layout = (new LayoutFactory)->createFromFilePath($dataItem['layoutSource'], $this->formattersKeyMapping);
+            $filePath = $this->basePathLayout . $dataItem['layoutSource'];
+            $Layout = (new LayoutFactory)->createFromFilePath($filePath, $this->formattersKeyMapping);
 
             $order = $dataItem['order'] ?? 0;
 
